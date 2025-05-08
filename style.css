@@ -1,5 +1,25 @@
 :root{
-    --títuloprincipalAzul:#0D09F4;
-    --subtítuloLaranja: #FF4B04;
-    --rodapéBRanco:#FFFFFF;
+    --tituloprincipalAzul:#0D09F4;
+    --subtituloLaranja: #FF4B04;
+    --rodapeBRanco:#FFFFFF;
+    --cordefundoprincipal: #000000;
+    --botãoazul: #1E00FF;
+}
+body{
+background-color: var(--cordefundoprincipal);
+}
+.principal{
+background-image: url("image/backgorund\ \(1).png");
+background-repeat: no-repeat;
+background-size: contain;
+}
+.container{
+height: 100vh;
+}
+.container_botao{
+
+background-color: var(--botãoazul);
+border-radius: 5px;
+padding: 1em;
+color: var(--cordefundoprincipal)
 }
