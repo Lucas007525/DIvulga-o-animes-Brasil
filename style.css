@@ -1,12 +1,17 @@
 :root{
     --tituloprincipalAzul:#0D09F4;
     --subtituloLaranja: #FF4B04;
-    --rodapeBRanco:#FFFFFF;
+    --cor-principal:#FFFFFF;
     --cordefundoprincipal: #000000;
     --botãoazul: #1E00FF;
+    --fonte-principal: 'Roboto Mono';
 }
 body{
 background-color: var(--cordefundoprincipal);
+font-family: var(--fonte-principal);
+font-size: 16px;
+font-weight: 400;
+color:var(--cor-principal);
 }
 .principal{
 background-image: url("image/backgorund\ \(1).png");
@@ -15,11 +20,15 @@ background-size: contain;
 }
 .container{
 height: 100vh;
+display: flex;
+justify-content: space-around;
+
 }
 .container_botao{
 
 background-color: var(--botãoazul);
 border-radius: 5px;
 padding: 1em;
-color: var(--cordefundoprincipal)
+color: var();
+
 }
