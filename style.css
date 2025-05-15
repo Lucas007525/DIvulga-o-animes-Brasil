@@ -1,34 +1,81 @@
-:root{
-    --tituloprincipalAzul:#0D09F4;
+:root {
+    --tituloprincipalAzul: #0D09F4;
     --subtituloLaranja: #FF4B04;
-    --cor-principal:#FFFFFF;
+    --cor-principal: #FFFFFF;
     --cordefundoprincipal: #000000;
-    --botãoazul: #1E00FF;
-    --fonte-principal: 'Roboto Mono';
+    --botaoAzul: #1E00FF;
+    --fonte-principal: 'Roboto Mono', monospace;
 }
-body{
-background-color: var(--cordefundoprincipal);
-font-family: var(--fonte-principal);
-font-size: 16px;
-font-weight: 400;
-color:var(--cor-principal);
-}
-.principal{
-background-image: url("image/backgorund\ \(1).png");
-background-repeat: no-repeat;
-background-size: contain;
-}
-.container{
-height: 100vh;
-display: flex;
-justify-content: space-around;
 
+body {
+    background-color: var(--cordefundoprincipal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-principal);
+    margin: 0;
+    padding: 0;
 }
-.container_botao{
 
-background-color: var(--botãoazul);
-border-radius: 5px;
-padding: 1em;
-color: var();
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
 
+.principal {
+    background-image: url("img/backgorund (1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.bloco-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.imagem-personagem {
+    max-width: 300px;
+    height: auto;
+}
+
+.titulo {
+    color: var(--tituloprincipalAzul);
+    font-size: 2rem;
+}
+
+.subtitulo {
+    color: var(--subtituloLaranja);
+    font-size: 1.5rem;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--botaoAzul);
+    color: var(--cor-principal);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #3c28ff;
+}
+
+.logo-animes {
+    max-width: 100px;
+    height: auto;
 }
